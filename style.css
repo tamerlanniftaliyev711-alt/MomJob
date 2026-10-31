@@ -1,0 +1,47 @@
+ul {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+}
+
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inp-btn {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+li button {
+    padding: 4px;
+    width: auto;
+    height: auto;
+    
+}
+
+.inp-btn input {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 20rem;
+}
+
+.inp-btn button {
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: transform 0.3s ease;
+    background-color: #2d4cbd;
+    color: white;
+    width: 5rem;
+}
+
+.inp-btn button:active {
+    transform: scale(0.95);
+}
+
+
