@@ -13,9 +13,9 @@ function render(text) {
     li.textContent = text
     const del = document.createElement('button')
     del.textContent = "Sil"
-    del.addEventListener('click' , () => {
+    del.addEventListener('click', () => {
         li.remove();
-        get.splice(get.indexOf(text) , 1)
+        get.splice(get.indexOf(text), 1)
         save();
     })
     lists.appendChild(li)
@@ -32,7 +32,10 @@ addToList.addEventListener('click', () => {
     save();
 });
 
-
-
+inp.addEventListener("keydown", (p) => {
+    if (p.key === "Enter") {
+        addToList.click()
+    }
+});
 
 
